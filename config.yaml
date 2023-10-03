@@ -1,0 +1,15 @@
+baseURL : "http://new.cojocaru.co.uk/"
+languageCode : "en-gb"
+title : "Ionut Cojocaru"
+
+markup:
+  defaultMarkdownHandler: "goldmark"
+
+disableKinds:
+- taxonomy
+- taxonomyTerm
+
+mediaTypes:
+  "text/javascript":
+    suffixes:
+      - "js"

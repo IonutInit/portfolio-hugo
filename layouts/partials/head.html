@@ -1,0 +1,21 @@
+<meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<title>{{ .Title }}</title>
+
+{{ $styles := resources.Get "css/main.css" }} {{ $styles = $styles |
+resources.PostCSS (dict "inlineImports" true) }} {{ if hugo.IsProduction }} {{
+$styles = $styles | minify }} {{ end }}
+
+<link href="{{ $styles.Permalink }}" rel="stylesheet" />
+
+{{ $opts := dict "minify" true "target" "es2015" }} {{ if eq hugo.Environment
+"development" }} {{ $opts = dict "sourceMap" "inline" }} {{ end }} {{ $built :=
+resources.Get "js/main.js" | js.Build $opts | fingerprint }}
+<script
+  type="text/javascript"
+  src="{{ $built.RelPermalink }}"
+  integrity="{{ $built.Data.Integrity }}"
+  defer
+></script>
