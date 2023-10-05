@@ -1,0 +1,36 @@
+{{ define "person-json" }}
+<script type="application/ld+json">
+    {
+  "@context": "https://www.schema.org",
+  "@type": "Person",
+  "name": "Ionut Cojocaru",
+  "nationality": "Romanian",
+  "alumniOf": [
+  	{
+  	 "@type": "CollegeOrUniversity",
+  	 "name": "University of Manchester",
+  	 "sameAs": "https://en.wikipedia.org/wiki/University_of_Manchester"
+  	},
+  	{
+  	 "@type": "CollegeOrUniversity",
+  	 "name": "Northcoders Bootcamp"
+  	}
+  ],
+  "gender": "Male",
+  "Description": "Web Developer",
+  "jobTitle": "Web Developer",
+  "url": {{ .Permalink }},
+  "image": "",
+  "address": {
+  	"@type": "PostalAddress",
+  	"addressLocality": "Manchester",
+  	"addressCountry": "UK"
+  },
+  "sameAs": [
+    "https://twitter.com/Ionut_Dev",
+    "https://www.linkedin.com/in/ionut-cojocaru-dev",
+    "https://github.com/IonutInit"
+  	]
+  }
+</script>
+{{ end }}

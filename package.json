@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "hugo server --gc --disableFastRender",
     "dev:preview": "npm run dev -- --buildDrafts --buildFuture",
-    "build": "cross-env HUGO_ENVIRONMENT=production hugo -v --gc --minify --cleanDestinationDir",
+    "build": "hugo -v --gc --minify --cleanDestinationDir",
     "renderToDisk": "hugo server --gc --disableFastRender --renderToDisk --cleanDestinationDir ",
     "renderToDisk:preview": "npm run renderToDisk -- --buildDrafts --buildFuture ",
     "renderToDisk:production": "npm run renderToDisk -- --minify --environment production",
@@ -22,7 +22,6 @@
     "tailwindcss": "^3.3.3"
   },
   "devDependencies": {
-    "cross-env": "^7.0.3",
     "prettier": "^3.0.3",
     "prettier-plugin-go-template": "^0.0.15"
   }

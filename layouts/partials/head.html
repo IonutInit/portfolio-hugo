@@ -1,20 +1,61 @@
-<meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
-<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<title>{{ .Title }}</title>
+<title>
+  {{- if .IsHome -}} {{- .Site.Title -}} {{- else -}} {{- .Site.Title }} - {{
+  .Title -}} {{- end -}}
+</title>
 
-{{ $styles := resources.Get "css/main.css" }} {{ $styles = $styles |
+<link rel="icon" type="image/x-icon" href="logo.ico" />
+<link
+  rel="shortcut icon"
+  type="image/png"
+  href="https://res.cloudinary.com/dfar3nuio/image/upload/v1696496312/ic-large_bfa7u3.png"
+/>
+<link
+  rel="apple-touch-icon"
+  href="https://res.cloudinary.com/dfar3nuio/image/upload/v1696496312/ic-large_bfa7u3.png"
+/>
+
+<meta
+  name="description"
+  content="{{- with .Description -}}{{- else -}}{{- if .IsPage -}}{{ .Summary }}{{- else -}}{{ .Site.Params.defaultDescription }}{{- end -}}{{- end -}}"
+/>
+
+{{ range .AlternativeOutputFormats -}}
+<link
+  rel="{{ .Rel }}"
+  type="{{ .MediaType.Type }}"
+  href="{{ .Permalink | safeURL }}"
+/>
+{{ end -}} {{- if and .IsNode (not .IsHome) -}}
+<link rel="canonical" href="{{ .Paginator.URL | absURL }}" />
+{{- if .Paginator.HasNext -}}
+<link rel="next" href="{{ .Paginator.Next.URL | absURL }}" />
+{{- end -}} {{- if .Paginator.HasPrev -}}
+<link rel="prev" href="{{ .Paginator.Prev.URL | absURL }}" />
+{{- end -}} {{- else -}}
+<link rel="canonical" href="{{ .Permalink | absURL }}" />
+{{- end -}} {{- if .Params.private -}}
+<meta name="robots" content="noindex, nofollow" />
+{{- end -}} {{ $styles := resources.Get "css/main.css" }} {{ $styles = $styles |
 resources.PostCSS (dict "inlineImports" true) }} {{ if hugo.IsProduction }} {{
-$styles = $styles | minify }} {{ end }}
+$styles = $styles | minify }} {{ end }} {{ template
+"_internal/google_analytics.html" . }} {{ template
+"_internal/twitter_cards.html" . }} {{ with .Site.Params.twitterSite -}}
+<meta name="twitter:site" content="{{ . }}" />
+{{ end -}} {{ with .Site.Params.twitterCreator -}}
+<meta name="twitter:creator" content="@Ionut_Dev" />
+{{ end -}} {{ template "_internal/opengraph.html" . }}
 
 <link href="{{ $styles.Permalink }}" rel="stylesheet" />
 
-{{ $opts := dict "minify" true "target" "es2015" }} {{ if eq hugo.Environment
-"development" }} {{ $opts = dict "sourceMap" "inline" }} {{ end }} {{ $built :=
-resources.Get "js/main.js" | js.Build $opts | fingerprint }}
+{{ $opts := dict "minify" true "target" "es2015" }} {{/* {{ if eq
+hugo.Environment "development" }} {{ $opts = dict "sourceMap" "inline" }} {{ end
+}} */}} {{ $built := resources.Get "js/main.js" | js.Build $opts | fingerprint
+}}
 <script
-  type="text/javascript"
   src="{{ $built.RelPermalink }}"
   integrity="{{ $built.Data.Integrity }}"
   defer

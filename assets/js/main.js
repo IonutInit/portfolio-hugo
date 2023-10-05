@@ -31,20 +31,20 @@ window.submitForm = () => {
 };
 
 const message = (status, statusText) => {
-  const color = status ? "bg-lime-600" : "bg-orange-600";
+  const color = status ? "#65a30d" : "#ea580c";
   submitButton.textContent = statusText;
-  submitButton.classList.add(color);
-  if (status) {
-    submitButton.disabled = true;
-  }
-  resetForm(color);
+  submitButton.style.backgroundColor = color;
+  submitButton.disabled = true;
+  resetForm(status);
 };
 
-const resetForm = (color) => {
-  form.reset();
+const resetForm = (status) => {
+  if (status) {
+    form.reset();
+  }
   setTimeout(() => {
     submitButton.textContent = "Submit";
-    submitButton.classList.remove(color);
+    submitButton.style.backgroundColor = "";
     submitButton.disabled = false;
   }, 5000);
   // grecaptcha.reset()

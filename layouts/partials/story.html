@@ -1,9 +1,11 @@
-<section
+<article
   class="flex flex-col justify-center items-center px-7 text-justify scroll-mt-[100px]"
   id="story"
 >
-  {{ with .GetPage "history.md" }}
-  <h1 class="pb-3">{{ .Title }}</h1>
+  {{ with .GetPage "story.md" }}
+  <header>
+    <h1 class="pb-3">{{ .Title }}</h1>
+  </header>
   <div class="text-md md:text-xl space-y-4">{{ .Content }}</div>
   {{ end }}
-</section>
+</article>

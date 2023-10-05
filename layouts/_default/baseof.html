@@ -1,11 +1,12 @@
 <!doctype html>
-<html>
+<html lang="{{ .Lang }}">
   <head>
-    {{ partial "head.html" . }}
+    {{ partial "head.html" . -}} {{ block "person-json" . }} {{ end }} {{ block
+    "breadcrumbs-json" . }} {{ end }}
   </head>
 
   <body>
-    {{ partial "header.html" . }} {{ block "main" . }} {{ end }} {{ partial
-    "footer.html" . }} {{ partial "script-footer.html" . }}
+    {{ partial "header.html" . -}} {{ block "main" . }} {{ end }} {{ partial
+    "footer.html" . -}} {{ partial "script-footer.html" . -}}
   </body>
 </html>

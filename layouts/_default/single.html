@@ -1,19 +1,17 @@
 {{ define "main" }}
-<div class="bg-bkg text-content">
-  <section class="min-h-screen max-w-4xl mx-auto text-justify">
-    {{/*
-    <h1>{{ .Title }}</h1>
-    */}}
-    <section class="w-full flex flex-col justify-center px-7">
+<main class="bg-bkg text-content">
+  <div class="min-h-screen max-w-4xl mx-auto text-justify">
+    <article class="w-full flex flex-col justify-center px-7">
       {{ .Content }}
-    </section>
+    </article>
     <div class="w-full flex justify-center py-7">
       <a
+        role="button"
         href="/"
-        class="font-semibold px-4 py-4 border-2 border-black dark:border-white rounded-sm hover:bg-orange-500 focus:outline-none w-full md:w-1/2 flex items-center justify-center"
+        class="font-semibold px-4 py-4 border-2 border-black dark:border-white rounded-sm hover:bg-orange-600 focus:outline-none w-full md:w-1/2 flex items-center justify-center"
         >Go back</a
       >
     </div>
-  </section>
-</div>
+  </div>
+</main>
 {{ end }}

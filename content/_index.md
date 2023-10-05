@@ -1,5 +1,6 @@
 ---
 title: Ionut
+description: Ionut Cojocaru - Typescript and Golang developer - working with React, NextJS, React Native and Hugo
 webdev:
 -   name: Typescript
     logo: "/images/typescript.svg"
@@ -44,6 +45,8 @@ footer:
 -   name: Twitter
     image: "images/twitter.png"
     link: "https://twitter.com/Ionut_Dev"
+images:
+-   more/more1.jpg #for twitter and facebook cards
 ---
 
 

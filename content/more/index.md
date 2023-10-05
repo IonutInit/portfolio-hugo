@@ -1,15 +1,17 @@
 ---
 title: "Tell Me More"
-date: 2023-09-27T18:55:42+01:00
-draft: false
+description: A page with a bit of a personal touch. Getting into the details of coding, and beyond.
 slug: tell-me-more
+# private: true
 ---
 ## Oh, hello again
 ### Nice to see you here
 
 Have you noticed how personal websites have become impersonal single-page affairs, more like on-line resumes? I for one, still believing in the *personal website*, have taken the middle way, and added this (somewhat) hidden, but more personal, second page. 
 
-![image alt](more1.jpg)
+![Mockup image of someone sitting on a bench and reading a paper with the title "WEb Developer Makes Portfolio"](more1.jpg)
+<!-- {{% styled_image "image alt" "more1.jpg" %}} -->
+
 
 ###
 
@@ -39,4 +41,4 @@ I use ngnix as proxy with a Digital Ocean server. I sometimes use Docker contain
 
 Below is a pic of my glorious current workflow, with the langchain container, local server, vps and tmux in action, and a sprinkle of Go for good measure.
 
-![image alt](more2.png)
+![A screenshot of my PC showing four panels, with various projects](more2.png)

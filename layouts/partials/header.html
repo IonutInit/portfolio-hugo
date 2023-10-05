@@ -7,12 +7,27 @@
       <h1 class="text-5xl">IC</h1>
     </a>
     <div>
-      <nav class="hidden md:block space-x-8 text-xl" arial-label="main">
+      <nav class="hidden md:block space-x-8 text-xl" aria-label="main">
         <a href="/#story" class="hover:opacity-70 text-content">About</a>
         <a href="/#projects" class="hover:opacity-70 text-content">Projects</a>
         <a href="/#contact" class="hover:opacity-70 text-content">Contact</a>
       </nav>
     </div>
   </section>
+
+  {{/* breadcrumbs - for later use */}} {{/*
+  <nav aria-label="breadcrumb">
+    <ol class="text-content flex">
+      {{ define "partials/inline/breadcrumb" -}} {{- with .Parent }} {{ partial
+      "inline/breadcrumb" . -}}
+      <li>
+        <a href="{{ .RelPermalink }}">{{ .Title | humanize | title }}</a>/
+      </li>
+      {{- end -}} {{ end }} {{ partial "inline/breadcrumb" . -}}
+      <li aria-current="page">{{ .Title | humanize | title }}</li>
+    </ol>
+  </nav>
+  */}}
+
   <div class="h-[5px] bg-black dark:bg-gray-50 w-full"></div>
 </header>

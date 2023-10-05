@@ -1,9 +1,21 @@
 baseURL : "https://new.cojocaru.co.uk/"
+# for xml output
 languageCode : "en-gb"
+# for website
+defaultContentLanguage: "en-gb"
 title : "Ionut Cojocaru"
+googleAnalytics: G-95VHLFKEY4
+enableRobotsTXT: true
+
+params:
+  defaultDescription: Ionut Cojocaru - Typescript and Golang developer - working with React, NextJS, React Native and Hugo
+  twitterSite: cojocaru.co.uk
+  twitterCreator: "@Ionut_Dev"
 
 markup:
   defaultMarkdownHandler: "goldmark"
+
+summaryLength: 50
 
 disableKinds:
 - taxonomy

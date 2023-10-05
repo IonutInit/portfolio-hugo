@@ -1,4 +1,4 @@
-<section
+<div
   class="flex flex-col justify-center items-center px-7 pt-7 scroll-mt-10"
   id="projects"
 >
@@ -11,13 +11,9 @@
     <div class="md:flex">
       <div class="flex flex-row">
         <div class="w-[100px] h-[100px] mr-5">
-          <a href="{{ .demoLink }}" target="_blank">
+          <a {{ with .demoLink }} href="{{ . }}" target="_blank" {{ end }}>
             {{ $image := resources.Get .image }}
-            <img
-              src="{{ $image.RelPermalink }}"
-              alt="{{ .name }} icon"
-              id="reverse"
-            />
+            <img src="{{ $image.RelPermalink }}" alt="{{ .name }} icon" />
           </a>
         </div>
         <div>
@@ -45,9 +41,10 @@
 
   <div class="w-full flex justify-center py-7">
     <a
+      role="button"
       href="./tell-me-more"
       class="text-black dark:text-white font-semibold px-4 py-4 border-2 border-black dark:border-white rounded-sm hover:bg-orange-500 focus:outline-none w-full md:w-1/2 flex items-center justify-center"
       >Tell me more...</a
     >
   </div>
-</section>
+</div>

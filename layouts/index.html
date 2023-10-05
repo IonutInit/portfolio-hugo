@@ -2,12 +2,13 @@
 
 <main class="bg-bkg text-content">
   <div class="max-w-4xl mx-auto">
-    {{ partial "hero.html" . }} {{ partial "story.html" . }} {{ partial
-    "projects.html" . }}
+    <section>{{ partial "hero.html" . }}</section>
+    <section>{{ partial "story.html" . }}</section>
+    <section>{{ partial "projects.html" . }}</section>
   </div>
 
   <div class="bg-gray-100 dark:bg-bkg text-content">
-    <div class="max-w-4xl mx-auto">{{ partial "contact.html" . }}</div>
+    <section class="max-w-4xl mx-auto">{{ partial "contact.html" . }}</section>
   </div>
 
   <script src="https://www.google.com/recaptcha/api.js" async defer></script>
