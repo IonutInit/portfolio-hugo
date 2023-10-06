@@ -1,7 +1,7 @@
 {
   "name": "portfolio-hugo",
-  "version": "0.1.0",
-  "description": "",
+  "version": "0.9.0",
+  "description": "Portfolio and personal website of Ionut Cojocaru",
   "main": "index.js",
   "scripts": {
     "dev": "hugo server --gc --disableFastRender",

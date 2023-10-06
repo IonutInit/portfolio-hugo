@@ -1,6 +1,6 @@
 {{ define "main" }}
 <main class="bg-bkg text-content">
-  <div class="min-h-screen max-w-4xl mx-auto text-justify pt-4">
+  <div class="min-h-screen max-w-4xl mx-auto pt-4">
     <h1 class="pt-4">Oh, NO!</h1>
     <p class="text-xl text-content pt-4">Looks like we hit a 404!</p>
     {{ $image := resources.Get "images/404.png"}}
@@ -12,7 +12,7 @@
     <div class="w-full flex justify-center py-7">
       <a
         role="button"
-        href="{{ '/' | relURL }}"
+        href="/"
         class="font-semibold px-4 py-4 border-2 border-black dark:border-white rounded-sm hover:bg-lime-600 focus:outline-none w-full md:w-1/2 flex items-center justify-center"
         >Go home</a
       >
