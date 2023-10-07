@@ -1,5 +1,5 @@
 ---
 title: "99 Riddles"
-draft: true
+draft: false
 ---
 Hello riddles

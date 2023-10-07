@@ -1,5 +1,5 @@
 ---
 title: "Artifices"
-draft: true
+draft: false
 ---
 Here is some general content

@@ -1,0 +1,9 @@
+    <div class="w-full flex justify-center py-4">
+      <a
+        role="button"
+        href="{{ .Get "href" }}"
+        target="_blank"
+        class="font-semibold px-4 py-2 border-2 border-black dark:border-white rounded-sm hover:bg-{{ .Get "color" }} focus:outline-none w-full md:w-1/2 flex items-center justify-center"
+        >{{ .Get "text" }}</a
+      >
+    </div>

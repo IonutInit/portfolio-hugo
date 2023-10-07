@@ -16,7 +16,7 @@ images:
 -   src: pic_6.jpg
     description: Above Capel Curig
 -   src: pic_7.jpg
-    description: A disuses quarry on the path to Moel Siabod
+    description: A disused quarry on the path to Moel Siabod
 -   src: pic_8.jpg
     description: Somewhere very foggy
 -   src: pic_9.jpg
