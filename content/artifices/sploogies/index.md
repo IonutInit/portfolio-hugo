@@ -1,6 +1,6 @@
 ---
 title: "The Sploogies"
-draft: false
+draft: true
 summary: A fast paced, strategic yet chaotic roll and write game.
 ---
 **ACTION | STRATEGY | THE UNEXPECTED**
