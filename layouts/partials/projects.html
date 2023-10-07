@@ -13,7 +13,11 @@
         <div class="w-[100px] h-[100px] mr-5">
           <a {{ with .demoLink }} href="{{ . }}" target="_blank" {{ end }}>
             {{ $image := resources.Get .image }}
-            <img src="{{ $image.RelPermalink }}" alt="{{ .name }} icon" class="rev"/>
+            <img
+              src="{{ $image.RelPermalink }}"
+              alt="{{ .name }} icon"
+              class="rev"
+            />
           </a>
         </div>
         <div>

@@ -1,9 +1,7 @@
 {{ define "main" }}
 <main class="bg-bkg text-content">
-  <div class="min-h-screen max-w-4xl mx-auto text-justify">
-    <article class="w-full flex flex-col pt-4">
-      {{ .Content }}
-    </article>
+  <div class="min-h-screen max-w-4xl mx-auto px-4 md:px-7 text-justify">
+    <article class="w-full flex flex-col pt-4">{{ .Content }}</article>
     <div class="w-full flex justify-center py-7">
       <a
         role="button"

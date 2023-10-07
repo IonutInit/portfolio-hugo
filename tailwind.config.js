@@ -14,14 +14,15 @@ module.exports = {
       },
       spacing: {
         7: "4rem",
-        "pic": "2rem",
+        4: "2rem",
+        pic: "2rem",
       },
       padding: {
         7: "4rem",
       },
       margin: {
         40: "10rem",
-        "pic": "0.5rem",
+        pic: "0.5rem",
       },
     },
   },

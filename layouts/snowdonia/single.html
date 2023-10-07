@@ -2,21 +2,16 @@
 <main class="bg-bkg text-content">
   <div class="min-h-screen max-w-4xl mx-auto text-justify">
     <div class="pt-4">
-    <h1>{{ .Title }}</h1>
+      <h1>{{ .Title }}</h1>
 
-    {{ .Content }}
+      {{ .Content }}
 
-<div class="flex flex-col gap-pic">
-{{ range .Params.images }}
-  {{ $image := .src }}
-  {{ $desc := .description }}
-  {{ with $.Page.Resources.GetMatch $image }}
-    {{ partial "image" (dict "src" . "desc" $desc) }}
-  {{ end }}
-{{ end }}
-</div>
-
- </div>
- </div>
+      <div class="flex flex-col gap-pic">
+        {{ range .Params.images }} {{ $image := .src }} {{ $desc := .description
+        }} {{ with $.Page.Resources.GetMatch $image }} {{ partial "image" (dict
+        "src" . "desc" $desc) }} {{ end }} {{ end }}
+      </div>
+    </div>
+  </div>
 </main>
 {{ end }}

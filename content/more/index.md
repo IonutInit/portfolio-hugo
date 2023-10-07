@@ -12,7 +12,7 @@ Have you noticed how personal websites have become impersonal single-page affair
 
 In fact, this website aims to serve a double purpose, which hopefully can be reconciled: to be your regular portfolio page, but also a personal website, and used for various purposes (including playing around with Hugo). As a result, there are other pages apart from this one, which are not publicly linked.
 
-![Mockup image of someone sitting on a bench and reading a paper with the title "WEb Developer Makes Portfolio"](more1.jpg)
+![Mockup image of someone sitting on a bench and reading a paper with the title "Web Developer Makes Portfolio"](more1.jpg)
 
 By the why, my name is pronounced *yo-noots*. Just imagine that the words *you* and *donut* had a baby.
 

@@ -1,18 +1,17 @@
-{{- $src := .src -}}
-{{- $desc := .desc -}}
-{{- $lqip := $src.Resize "100x gif" -}}
-{{- $lqip = $lqip.Filter (images.GaussianBlur 1) -}}
-{{- $lqip = printf "data:image/gif;base64,%s" ($lqip.Content | base64Encode) -}}
+{{- $src := .src -}} {{- $desc := .desc -}} {{- $lqip := $src.Resize "100x gif"
+-}} {{- $lqip = $lqip.Filter (images.GaussianBlur 1) -}} {{- $lqip = printf
+"data:image/gif;base64,%s" ($lqip.Content | base64Encode) -}}
 
 <figure>
-<img src="{{ $lqip | safeURL }}"
-     data-src="{{ $src }}"
-     width="{{ $src.Width }}"
-     height="{{ $src.Height }}"
-     alt="{{ $desc }}"
-     class="lazyload lquip blur-up mb-pic"
->
-{{- if $desc -}}
-<figcaption>{{ $desc }}</figcaption>
-{{- end -}}
+  <img
+    src="{{ $lqip | safeURL }}"
+    data-src="{{ $src }}"
+    width="{{ $src.Width }}"
+    height="{{ $src.Height }}"
+    alt="{{ $desc }}"
+    class="lazyload lquip blur-up mb-pic"
+  />
+  {{- if $desc -}}
+  <figcaption>{{ $desc }}</figcaption>
+  {{- end -}}
 </figure>
