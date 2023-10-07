@@ -16,7 +16,7 @@
 }
 
 @media (prefers-color-scheme: dark) {
-  img {
+ img.rev {
     filter: invert(1);
     mix-blend-mode: difference;
   }
@@ -52,4 +52,17 @@ html {
 
 .grecaptcha-badge {
   visibility: hidden;
+}
+
+.custom-footer {
+  min-height: 70px;
+}
+
+.blur-up {
+  filter: blur(1px);
+  transition: filter 800ms;
+}
+
+.blur-up.lazyloaded {
+  filter: blur(0)
 }

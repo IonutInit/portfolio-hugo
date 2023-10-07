@@ -10,9 +10,13 @@ slug: tell-me-more
 
 Have you noticed how personal websites have become impersonal single-page affairs, more like on-line resumes? I for one, still believing in the *personal website*, have taken the middle way, and added this (somewhat) hidden, but more personal, second page. 
 
+In fact, this website aims to serve a double purpose, which hopefully can be reconciled: to be your regular portfolio page, but also a personal website, and used for various purposes (including playing around with Hugo). As a result, there are other pages apart from this one, which are not publicly linked.
+
 ![Mockup image of someone sitting on a bench and reading a paper with the title "WEb Developer Makes Portfolio"](more1.jpg)
 
 By the why, my name is pronounced *yo-noots*. Just imagine that the words *you* and *donut* had a baby.
+
+My surname is *Cojocaru* (pronounced something like *ko-zho-ka-roo*)
 
 ## So, why coding?
 ***
@@ -38,7 +42,7 @@ My databases of choice are MongoDB and PostgreSQL.
 ### The backend
 I use Nginx as proxy on a Digital Ocean server. I sometimes use Docker containers.
 
-![A screenshot of my PC showing four panels, with various projects](more2.png)
+![A screenshot of my PC showing four panels, with various projects](more2.jpg)
 
 Above is a pic of my glorious current workflow. In the top-left corner is a containerized instance of LangChain, an LLM framework running ChatGPT via ChainLit, from my local bare metal server. The beauty of this is that you can feed ChatGPT your own inputs, such as PDFs, and it replies with tne information contained there.
 
@@ -54,6 +58,6 @@ I cook, usually light meals like salads and pasta, I spend time with a very medi
 
 As a part-time hobby I also run a project called *Artifices*, which does a combination of things, from zines to print-and-play games, and to [**planting a forest**](https://ecologi.com/artifices). So far, I've managed to plant 600 trees.
 
-When I don't do any of this stuff, I'm probably out hiking. I know every rock and pond in North Snowdonia. When time permits, I'm out to Scotland, preferably as far north as possible.
+When I don't do any of this stuff, I'm probably out hiking. I know every rock and pond in North Snowdonia. The place where I always return is Nant y Geuallt and the area between Vlogwyn Mawr and Craig Wen. In 2019 I left £5 in a broken bottle I found on the summit of Craig Wen. It was still there in 2022. It disappeared (bottle included) in 2023. When time permits, I'm out to Scotland, preferably as far north as possible.
 
-![A picture of Ori the brown dog](more3.jpeg)
+![A picture of Ori the brown dog](more3.jpg)

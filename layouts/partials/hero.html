@@ -26,7 +26,7 @@
     >
       <div class="w-1"></div>
       {{ $image := resources.Get .logo }}
-      <img src="{{ $image.RelPermalink }}" style="max-width: 50px" />
+      <img src="{{ $image.RelPermalink }}" style="max-width: 50px" class="rev"/>
       <p>{{ .name }}</p>
     </div>
     {{ end }}
@@ -47,7 +47,7 @@
     >
       <div class="w-1"></div>
       {{ $image := resources.Get .logo }}
-      <img src="{{ $image.RelPermalink }}" style="max-width: 50px" />
+      <img src="{{ $image.RelPermalink }}" style="max-width: 50px" class="rev" />
       <p>{{ .name }}</p>
     </div>
     {{ end }}
