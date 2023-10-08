@@ -63,18 +63,3 @@ form.addEventListener(
   },
   false,
 );
-
-// footer
-const darkModeQuery = window.matchMedia("(prefers-color-scheme: dark)");
-const footer = document.getElementById("footer");
-const handleFooterMode = (mode) => {
-  if (mode.matches) {
-    footer.classList.remove("bg-gray-900");
-  } else {
-    footer.classList.add("bg-gray-900");
-  }
-};
-
-handleFooterMode(darkModeQuery);
-
-darkModeQuery.addListener(handleFooterMode);

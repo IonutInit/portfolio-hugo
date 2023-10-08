@@ -2,7 +2,7 @@
 
 Second iteration of my portfolio and personal website, made in Hugo.
 
-(first iteration available [here](https://old.cojocaru.co.uk))
+(first iteration available [here](https://old.i-co.xyz))
 
 
 ### Change log
@@ -20,4 +20,5 @@ Second iteration of my portfolio and personal website, made in Hugo.
 - added Snowdonia picture gallery and lazy loading
 - fixed justification for small screens
 - fixed image filter for dark mode
-  
+- fixed MIME type issue 
+- improved footer

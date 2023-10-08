@@ -35,16 +35,6 @@ projects:
     image: "/images/piquaboo-go.svg"
     text: A complete, custom, e-commerce solution attending to every need a small e-commerce business can have. It consisted of two main components, accountancy and product management. The former calculated sales, UK and EU tax, costs, providing consolidated data to be fed into an accountancy software. The latter handled everything from inventory management, price automation, listing and help with shipping.
     madeWith: JavaScript
-footer:
--   name: Github
-    image: "/images/github.png"
-    link: "https://github.com/IonutInit"
--   name: LinkedIn
-    image: "/images/linkedin.png"
-    link: "https://www.linkedin.com/in/ionut-cojocaru-dev"
--   name: Twitter
-    image: "images/twitter.png"
-    link: "https://twitter.com/Ionut_Dev"
 images:
 -   more/more1.jpg #for twitter and facebook cards
 ---

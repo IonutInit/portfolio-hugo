@@ -51,11 +51,9 @@ $styles = $styles | minify }} {{ end }} {{ template
 
 <link href="{{ $styles.Permalink }}" rel="stylesheet" />
 
-{{ $opts := dict "minify" true "target" "es2015" }} 
-{{/* {{ if eq
+{{ $opts := dict "minify" true "target" "es2015" }} {{/* {{ if eq
 hugo.Environment "development" }} {{ $opts = dict "sourceMap" "inline" }} {{ end
-}} */}} 
-{{ $built := resources.Get "js/main.js" | js.Build $opts | fingerprint
+}} */}} {{ $built := resources.Get "js/main.js" | js.Build $opts | fingerprint
 }}
 
 <script
