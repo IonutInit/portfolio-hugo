@@ -25,3 +25,7 @@ mediaTypes:
   "text/javascript":
     suffixes:
       - "js"
+
+security:
+  gotemplates:
+    allowActionJSTmpl: true
