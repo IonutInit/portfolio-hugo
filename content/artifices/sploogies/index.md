@@ -23,7 +23,17 @@ Highly replayable. In addition, the PnP board is a configurable PDF containing 1
 
 ![Playing The Sploogies](sploogies.jpg)
 
-{{<button href="https://oaqpcyydcmzmcaybblev.supabase.co/storage/v1/object/sign/artifices/The%20Sploogies%20-%20Rules%20Sheet%20-%20A4.pdf?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJhcnRpZmljZXMvVGhlIFNwbG9vZ2llcyAtIFJ1bGVzIFNoZWV0IC0gQTQucGRmIiwiaWF0IjoxNjk2NjkzMTk5LCJleHAiOjMzMjAxMTU3MTk5fQ.O5B8jQNiL96ZxisJ_8Bx6AbJvmBHyqbFIm0UfXWw4gk&t=2023-10-07T15%3A39%3A59.982Z" text="Download" color="lime-600">}}
+{{<button href="https://oaqpcyydcmzmcaybblev.supabase.co/storage/v1/object/sign/artifices/The%20Sploogies%20-%20Rules%20Sheet%20-%20A4.pdf?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJhcnRpZmljZXMvVGhlIFNwbG9vZ2llcyAtIFJ1bGVzIFNoZWV0IC0gQTQucGRmIiwiaWF0IjoxNjk2NjkzMTk5LCJleHAiOjMzMjAxMTU3MTk5fQ.O5B8jQNiL96ZxisJ_8Bx6AbJvmBHyqbFIm0UfXWw4gk&t=2023-10-07T15%3A39%3A59.982Z" text="Download" text2="3.4 MB">}}
 
 
 Find below the whole story behind The Sploogies.
+
+![](Sploogies_1.jpg)
+
+![](Sploogies_2.jpg)
+
+![](Sploogies_3.jpg)
+
+![](Sploogies_4.jpg)
+
+![](Sploogies_5.jpg)

@@ -2,7 +2,7 @@
 title: "A Bit of History"
 ---
 ___
-A former linguistics student, I ran a successful e-commerce business until 2021.
+A former linguistics student, I ran an e-commerce business from 2014 until 2021.
 
 It was there that I made my first serious coding project, a complete e-commerce solution attending virtually every need of the business. As it was made in JavaScript, I naturally called it Go. And that's how I developed a taste for coding.
 
