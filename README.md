@@ -22,3 +22,7 @@ Second iteration of my portfolio and personal website, made in Hugo.
 - fixed image filter for dark mode
 - fixed MIME type issue 
 - improved footer
+
+##### v0.9.2
+- replaced Twitter with npm
+- small design changes
