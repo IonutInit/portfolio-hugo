@@ -2,3 +2,5 @@ node_modules
 .vscode
 resources
 .hugo_build.lock
+ask
+thisVersion.md
