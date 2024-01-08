@@ -26,3 +26,6 @@ Second iteration of my portfolio and personal website, made in Hugo.
 ##### v0.9.2
 - replaced Twitter with npm
 - small design changes
+
+##### v0.9.3
+- added Umami analytics (everything works except geo-location; if this is related to Google tags, then the self-initiating script used will hopefully fix the error)
