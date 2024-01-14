@@ -1,0 +1,12 @@
+{{ $imageName := .Get "name" }}
+{{ $figCap := .Get "figCap" | default "false" }}
+{{ range .Page.Params.images }}
+    {{ if eq .src $imageName }}
+        {{ $src := .src }}
+        {{ $desc := .description }}
+        {{ with $.Page.Resources.GetMatch $src }}
+            {{ partial "image" (dict "src" . "desc" $desc "figCap" $figCap) }}
+        {{ end }}
+    {{ end }}
+{{ end }}
+

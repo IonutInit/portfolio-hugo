@@ -3,6 +3,13 @@ title: "Tell Me More"
 description: A page with a bit of a personal touch. Getting into the details of what and why I code, and beyond.
 slug: tell-me-more
 # private: true
+images:
+-   src: more1.jpg
+    description: Mockup image of someone sitting on a bench and reading a paper with the title "Web Developer Makes Portfolio"
+-   src: more2.jpg
+    description: A screenshot of my PC showing four panels, with various projects
+-   src: more3.jpg
+    description: A picture of Ori the brown dog
 ---
 # Oh, hello again
 {{< vspace 10 >}}
@@ -16,7 +23,7 @@ In fact, this website aims to serve a double purpose, which hopefully can be rec
 
 {{< vspace 5>}}
 
-![Mockup image of someone sitting on a bench and reading a paper with the title "Web Developer Makes Portfolio"](more1.jpg)
+{{< image name="more1.jpg" >}}
 
 {{< vspace 5>}}
 
@@ -57,7 +64,7 @@ My databases of choice are MongoDB and PostgreSQL.
 ### The backend
 I use Nginx as proxy on a Digital Ocean server. I sometimes use Docker containers.
 
-![A screenshot of my PC showing four panels, with various projects](more2.jpg)
+{{< image name="more2.jpg">}}
 
 Above is a pic of my glorious current workflow. In the top-left corner is a containerized instance of LangChain, an LLM framework running ChatGPT via ChainLit, from my local bare metal server. The beauty of this is that you can feed ChatGPT your own inputs, such as PDFs, and it replies with tne information contained there.
 
@@ -79,4 +86,4 @@ As a part-time hobby I also run a project called *Artifices*, which does a combi
 
 When I don't do any of this stuff, I'm probably out hiking. I know every rock and pond in North Snowdonia. The place where I always return is Nant y Geuallt and the area between Vlogwyn Mawr and Craig Wen. In 2019 I left £5 in a broken bottle I found on the summit of Craig Wen. It was still there in 2022. It disappeared (bottle included) in 2023. When time permits, I'm out to Scotland, preferably as far north as possible.
 
-![A picture of Ori the brown dog](more3.jpg)
+{{< image name="more3.jpg">}}

@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .lazyload {
+        transition: filter 1.3s ease-out;
+    }
+
+    .lazyload.lquip {
+        filter: blur(5px);
+    }
+}

@@ -1,6 +1,11 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: [],
+  content: [
+    "./layouts/**/*.html",
+    "./content/**/*.md",
+    "./content/**/*.html",
+    "./styles/main.css"
+  ],
   theme: {
     extend: {
       fontSize: {
@@ -32,6 +37,7 @@ module.exports = {
       "./layouts/**/*.html",
       "./content/**/*.md",
       "./content/**/*.html",
+      "./styles/main.css", //doesn't seem to work at the moment
     ],
   },
 };
