@@ -27,3 +27,6 @@ Second iteration of my portfolio and personal website, made in Hugo.
 - replaced Twitter with npm
 - small design changes
 - added Umami analytics
+
+##### v1.0.0
+- added image lazy loading shortcode
